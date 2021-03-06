@@ -1,0 +1,24 @@
+.container__img {
+	width: 200px;
+	height: 300px;
+}
+
+.container__item-row {
+	display: flex;
+}
+
+.container__item-man {
+	margin-top: 15px;
+}
+
+.container__item-img {
+	width: 100px;
+}
+
+.container__img:hover~.container__item-row:nth-child(odd)>.container__item-man:nth-child(even) {
+	visibility: hidden;
+}
+
+.container__img:hover~.container__item-row:nth-child(even)>.container__item-man:nth-child(odd) {
+	visibility: hidden;
+}

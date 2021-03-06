@@ -1,0 +1,17 @@
+.container {
+	width: 100%;
+}
+
+.container__img {
+	width: 200px;
+	float: left;
+	margin-right: 15px;
+}
+
+@media print {
+	.container__img {
+		margin-bottom: 15px;
+		float: none;
+	}
+
+}

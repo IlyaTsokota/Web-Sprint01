@@ -1,0 +1,203 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #2f3035;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
+i {
+	font-family: fontawesome !important;
+}
+
+/*--------------------*/
+
+* {
+	font-family: Consolas, sans-serif;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.promo {
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.promo-title {
+	width: 100%;
+	display: flex;
+	color: #fff;
+	font-weight: 700;
+	justify-content: center;
+	font-size: 3em;
+	background-color: red;
+}
+
+.promo__menu {
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.promo__menu-item {
+	text-align: center;
+	font-size: 16px;
+	flex: 0 0 250px;
+	background-color: #ccc;
+	margin: 0 2.5px;
+	position: relative;
+	user-select: none;
+}
+
+.promo__menu-el>span {
+	display: block;
+	padding: 10px 15px;
+}
+
+.promo__menu-el--main {
+	width: 100%;
+}
+
+.promo__menu-submenu {
+	position: absolute;
+	width: 100%;
+	background-color: #ccc;
+	visibility: hidden;
+	top: 100px;
+	opacity: 0;
+	transition: 0.3s all;
+}
+
+.submenu {
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+
+.submenu__items {
+	visibility: hidden;
+	opacity: 0;
+	background-color: #ccc;
+	position: absolute;
+	left: 120%;
+	top: 0;
+	color: #000;
+	transition: 0.3s all;
+}
+
+.submenu__item {
+	padding: 10px 5px;
+	text-align: left;
+}
+
+.promo__menu-item:hover>.promo__menu-el--main {
+	background-color: red;
+}
+
+.promo__menu-item:hover>.promo__menu-submenu {
+	visibility: visible;
+	opacity: 1;
+	top: 36px;
+}
+
+.promo__menu-el.submenu:hover {
+	background-color: red;
+	color: #fff;
+}
+
+
+.promo__menu-el.submenu:hover>.submenu__items {
+	visibility: visible;
+	opacity: 1;
+	left: 100%;
+}
