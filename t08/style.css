@@ -1,0 +1,75 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #2f3035;
+}
+
+
+body {
+	position: relative;
+	background-color: #4e68be;
+	z-index: 1;
+}
+
+@keyframes move-x {
+	from {
+		left: 15px;
+	}
+
+	50% {
+		left: calc(100% - 215px);
+	}
+
+	100% {
+		left: 15px;
+
+	}
+}
+
+@keyframes gren-color {
+	100% {
+		background-color: rgb(78, 153, 78);
+	}
+}
+
+
+.circle {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: green;
+	transform: translateY(-50%);
+	animation: move-x 4s infinite ease;
+	z-index: 100;
+	transition: all 0s ease 2s;
+}
+
+
+.circle:hover {
+	background-color: rgb(177, 76, 76);
+}
